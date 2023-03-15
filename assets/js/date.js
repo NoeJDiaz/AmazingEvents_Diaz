@@ -24,7 +24,7 @@ function mostrarCards (array){
     </p>
     <div class="acceso">
         <p class="codigo">${card.date}</p>
-         <button  class="btn btn1 btn-outline-danger " type="submit"><a class="search" href="./details.html?id=${card._id}" >Search</a></button>
+         <button  class="btn btn1 btn-outline-danger " type="submit"><a class="search" href="./details.html?id=${card._id}" >Details</a></button>
     </div>
     </div>`
 }) 

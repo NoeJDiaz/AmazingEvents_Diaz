@@ -10,7 +10,10 @@ const event = data.events.find(card => card._id === Number(id))
 
 const div = document.getElementById("card2")
 div.innerHTML = `
+<div id="volver-container">
 <img class="foto2" src="${event.image}" width="300" height="300" alt=" concierto">
+<a id="volver" href="javascript:history.back()"> Back Home</a>
+</div>
 <div class="event">
   <h2 class="titulo2">${event.name}</h2>
   <div class="texto2">
@@ -21,5 +24,6 @@ div.innerHTML = `
     <p class="desc"><span>Capacity: </span>${event.capacity}</p>
     <p class="desc"><span>Assistance: </span>${event.estimate ?? event.assistance}</p>
     <p class="desc"><span>Price: </span>${event.price}</p>
+   
   </div>
 </div>`

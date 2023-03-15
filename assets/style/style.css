@@ -6,6 +6,9 @@ body {
   font-family: "Charm", cursive;
   height: 100vh;
 }
+header{
+ min-height: 30vh;
+}
 .logo {
   width: 170px;
 }
@@ -13,7 +16,7 @@ body {
   height: 400px;
 }
 .main, .tab, .container-form{
-  min-height: 700px;
+  min-height:80vh;
 }
 .container-titulo > h2 {
   text-decoration: underline;
@@ -32,6 +35,9 @@ footer {
   padding: 20px;
   align-items: center;
   justify-content: space-between;
+height: 10vh;
+position: relative;
+bottom: 0;
 }
 
 .foto {
@@ -105,6 +111,10 @@ footer {
   box-shadow: 1px 1px 1px 1px #050203;
   display: flex;
   flex-basis: 30%;
+}
+img{
+  height: auto;
+  width: 200px;
 }
 .event {
   display: flex;
@@ -386,6 +396,16 @@ thead tr {
   display: flex;
   font-size: 14px;
   margin-left: 1px;
+}
+#volver{
+  color: red !important;
+}
+#volver-container{
+  display: flex;
+  flex-direction: column;
+  height: 261px;
+  width: 181px;
+  justify-content: space-evenly;
 }
 #email,
 #message,
