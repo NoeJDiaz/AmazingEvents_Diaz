@@ -19,7 +19,7 @@ div.innerHTML = `
     <p class="desc"><span>Category: </span>${event.category}</p>
     <p class="desc"><span>Place: </span>${event.place}</p>
     <p class="desc"><span>Capacity: </span>${event.capacity}</p>
-    <p class="desc"><span>Assistance: </span>${event.assistance}</p>
+    <p class="desc"><span>Assistance: </span>${event.estimate ?? event.assistance}</p>
     <p class="desc"><span>Price: </span>${event.price}</p>
   </div>
 </div>`

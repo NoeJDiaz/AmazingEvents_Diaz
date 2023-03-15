@@ -312,6 +312,9 @@ thead tr {
   .inputs > input {
     margin-left: 3px !important;
   }
+  .inputs > label{
+    font-size: 9px !important;
+  }
   .card2 {
     width: 266px !important;
     height: 436px !important;
@@ -331,6 +334,9 @@ thead tr {
   .inputs > input {
     margin-left: 20px !important;
   }
+  .inputs > label{
+    font-size: 11px !important;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -346,27 +352,17 @@ thead tr {
     flex-direction: row !important;
   }
 
-  .lista {
-    flex-direction: row;
-  }
+ 
   .inputs > input {
-    margin-left: 8px !important;
+    margin-left: 23px !important;
   }
 }
 @media only screen and (min-width: 888px) {
   .inputs > input {
-    margin-left: 36px !important;
+    margin-left: 30px !important;
   }
-}
-@media only screen and (min-width: 920px) {
-  .inputs > label {
-    font-size: 12px !important;
-  }
-}
-
-@media only screen and (min-width: 1120px) {
-  .inputs > label {
-    font-size: 20px !important;
+  .lista {
+    flex-direction: row;
   }
 }
 
@@ -379,7 +375,7 @@ thead tr {
 .inputs > input {
   background: #e21e08;
   border-color: #e21e08;
-  margin-left: 50px;
+  margin-left: 18px;
 }
 .inputs {
   display: inline-flex;
@@ -388,8 +384,8 @@ thead tr {
 }
 .inputs > label {
   display: flex;
-  font-size: 10px;
-  margin-left: 4px;
+  font-size: 14px;
+  margin-left: 1px;
 }
 #email,
 #message,
