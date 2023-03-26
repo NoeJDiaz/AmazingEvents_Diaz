@@ -78,7 +78,7 @@ bottom: 0;
   background: none !important;
   width: 209px;
   margin: 0 auto;
-
+  flex-grow: 1;
   margin-top: 15px;
 }
 .codigo {
