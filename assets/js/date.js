@@ -1,8 +1,17 @@
-import data from "./amazing.js"
+//import data from "./amazing.js"
+async function obtenerData() {
+    let data = await fetch("/assets/data/amazing.json")
+        .then(response => response.json())
+       
+            return data
+     
+    //mostrarCards(data)
+    //console.log(data);
+    
+}
+let data = await obtenerData()
 
 const events = data.events
-let currentDate = data.currentDate
-//el parametro event es el singular del array recorrido, el cual se lo vuelve a llamar en el filtro.
 
 const cardss = document.getElementById('cardss')
 

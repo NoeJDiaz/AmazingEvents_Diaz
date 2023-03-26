@@ -1,16 +1,26 @@
-import data from "./amazing.js"
+//import data from "./amazing.js"
 
+async function obtenerData() {
+    let data = await fetch("/assets/data/amazing.json")
+        .then(response => response.json())
+       
+            return data
+     
+    //mostrarCards(data)
+    //console.log(data);
+    
+}
+let data = await obtenerData()
 
+//console.log(data);
 const events = data.events
 let currentDate = data.currentDate
+
 //el parametro event es el singular del array recorrido, el cual se lo vuelve a llamar en el filtro.
 
-
 let filterEvents = events.filter((event) => (new Date(event.date).getTime() < new Date(currentDate).getTime()))
-//console.log(filterEvents);
 
 const cardss = document.getElementById('cardss')
-
 function mostrarCards (array){
 
     if( array.length == 0){
@@ -35,6 +45,7 @@ function mostrarCards (array){
 }) 
     cardss.innerHTML = cardsF
 }
+
 mostrarCards(filterEvents)
 
 const contenedorCheck = document.getElementById('inputs-container')

@@ -88,8 +88,8 @@ bottom: 0;
   
 }
 .card2 {
-  height: 320px;
-  width: 480px;
+  height: 465px;
+  width: 788px;
   position: relative;
   background: #bb38298f;
   color: #e21e08;
@@ -114,7 +114,7 @@ bottom: 0;
 }
 img{
   height: auto;
-  width: 200px;
+  width: 220px;
 }
 .event {
   display: flex;
@@ -126,6 +126,11 @@ img{
 .texto2 {
   margin-left: 5px;
   margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+#des{
+  flex-grow: 1 !important;
 }
 .desc {
   margin: 0px;
@@ -269,19 +274,16 @@ th {
   font-weight: bolder;
 }
 
-tbody tr:nth-child(even),tbody tr:nth-child(odd) {
+tbody tr {
   background-color: #e7ae93;
 }
 
-tbody tr:nth-child(1),
-tbody tr:nth-child(4),
-tbody tr:nth-child(9)
+#descrip
 {
   background-color: rgba(236, 134, 134, 0.911);
 }
 
-tbody tr:nth-child(8),
-tbody tr:nth-child(3),
+
 thead tr {
   background-color: rgba(240, 98, 98, 0.842);
 }
@@ -326,14 +328,12 @@ thead tr {
     font-size: 9px !important;
   }
   .card2 {
-    width: 266px !important;
-    height: 436px !important;
+    width: 300px !important;
+    height: 600px !important;
     flex-direction: column !important;
     
   }
-  .event{
-    margin-left: 16px!important;
-  }
+ 
   footer{
     flex-direction: column !important;
     justify-content: center !important;
@@ -343,6 +343,15 @@ thead tr {
 @media only screen and (min-width: 481px) and (max-width: 760px) {
   .inputs > input {
     margin-left: 20px !important;
+  }
+  .card2 {
+    width: 387px !important;
+    height: 573px !important;
+    flex-direction: column !important;
+    
+  }
+  .texto2{
+    margin-left: 5px !important;
   }
   .inputs > label{
     font-size: 11px !important;
@@ -404,7 +413,7 @@ thead tr {
   display: flex;
   flex-direction: column;
   height: 261px;
-  width: 181px;
+  width: 220px;
   justify-content: space-evenly;
 }
 #email,

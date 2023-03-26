@@ -1,4 +1,17 @@
-import data from "./amazing.js"
+//import data from "./amazing.js"
+
+async function obtenerData() {
+  let data = await fetch("/assets/data/amazing.json")
+      .then(response => response.json())
+     
+          return data
+   
+  //mostrarCards(data)
+  //console.log(data);
+  
+}
+let data = await obtenerData()
+
 
 const queryString = location.search
 
@@ -18,7 +31,7 @@ div.innerHTML = `
   <h2 class="titulo2">${event.name}</h2>
   <div class="texto2">
     <p class="desc"><span>Date: </span>${event.date}</p>
-    <p class="desc"><span>Description: </span>${event.description}</p>
+    <p id ="des" class="desc"><span>Description: </span>${event.description}</p>
     <p class="desc"><span>Category: </span>${event.category}</p>
     <p class="desc"><span>Place: </span>${event.place}</p>
     <p class="desc"><span>Capacity: </span>${event.capacity}</p>
